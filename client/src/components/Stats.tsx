@@ -10,28 +10,28 @@ interface StatsProps {
 
 export default function Stats({ stats, title }: StatsProps) {
   return (
-    <section className="py-20 bg-primary" data-testid="section-stats">
+    <section className="py-20 bg-muted/50" data-testid="section-stats">
       <div className="max-w-7xl mx-auto px-6">
         {title && (
-          <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
             {title}
           </h2>
         )}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center p-6 rounded-lg bg-primary-foreground/10"
+              className="text-center p-6 rounded-lg bg-card border border-card-border"
               data-testid={`stat-item-${index}`}
             >
               <div
-                className="text-3xl md:text-4xl font-bold text-primary-foreground mb-3"
+                className="text-3xl md:text-4xl font-bold text-primary mb-3"
                 data-testid={`text-stat-value-${index}`}
               >
                 {stat.value}
               </div>
               <div
-                className="text-primary-foreground/90 text-sm leading-relaxed"
+                className="text-muted-foreground text-sm leading-relaxed"
                 data-testid={`text-stat-label-${index}`}
               >
                 {stat.label}

@@ -82,6 +82,7 @@ const stats = [
   { value: "20-30%", label: "higher conversion rates with AI marketing personalization" },
   { value: "20-40%", label: "of employee time freed up through AI automation" },
   { value: "70%", label: "of SMBs using AI chatbots report faster response times" },
+  { value: "10-15%", label: "increase in customer retention through AI-driven personalization" },
 ];
 
 const socialLinks = [
@@ -130,9 +131,9 @@ export default function Home() {
         title="Get In Touch"
         subtitle="Ready to transform your business? Let's start a conversation."
         contactInfo={{
-          email: "hello@leistly.com",
-          phone: "+1 (555) 123-4567",
-          address: "123 Business Ave, Suite 100, San Francisco, CA 94105",
+          email: "contact@leistly.com",
+          phone: "+1-416-879-1731",
+          address: "Burlington, Ontario",
         }}
       />
 
