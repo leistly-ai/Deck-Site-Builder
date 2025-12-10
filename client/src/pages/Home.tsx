@@ -77,10 +77,11 @@ const services = [
 ];
 
 const stats = [
-  { value: "500+", label: "Clients Served" },
-  { value: "95%", label: "Client Satisfaction" },
-  { value: "10+", label: "Years Experience" },
-  { value: "50M+", label: "Revenue Generated" },
+  { value: "80%", label: "of SMBs using AI report improved efficiency and reduced operational costs" },
+  { value: "30%", label: "reduction in operational costs through AI-driven automation" },
+  { value: "20-30%", label: "higher conversion rates with AI marketing personalization" },
+  { value: "20-40%", label: "of employee time freed up through AI automation" },
+  { value: "70%", label: "of SMBs using AI chatbots report faster response times" },
 ];
 
 const socialLinks = [
@@ -117,7 +118,7 @@ export default function Home() {
 
       <Services title="Our Services" services={services} />
 
-      <Stats stats={stats} />
+      <Stats stats={stats} title="The Power of AI for Small & Medium Businesses" />
 
       <About
         title="About Leistly"
